@@ -14,7 +14,7 @@ namespace TabbedPageLoadingIssueIOS
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new TabbedTestPage();
         }
 
         protected override void OnStart()
