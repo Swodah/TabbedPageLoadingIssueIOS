@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using TabbedPageLoadingIssueIOS.Models;
 using TabbedPageLoadingIssueIOS.Services;
+using TabbedPageLoadingIssueIOS.Views;
 using Xamarin.Forms;
 
 namespace TabbedPageLoadingIssueIOS.ViewModels
@@ -20,6 +22,13 @@ namespace TabbedPageLoadingIssueIOS.ViewModels
         }
 
         string title = string.Empty;
+
+        public async Task Initialize() {
+            Pages.Add(new Page1Test());
+            Pages.Add(new Page2Test());
+        }
+
+       public List<Page> Pages = new List<Page>();
         public string Title
         {
             get { return title; }

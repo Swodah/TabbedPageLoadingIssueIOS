@@ -3,7 +3,5 @@
             x:Class="TabbedPageLoadingIssueIOS.TabbedTestPage"
             BackgroundColor="Yellow">
     <!--Pages can be added as references or inline-->
-    <ContentPage Title="Tab 1" BackgroundColor="Transparent" />
-    <ContentPage Title="Tab 2" BackgroundColor="Red" Opacity="0.1" />
-    <ContentPage Title="Tab 3" BackgroundColor="blue" />
+
 </TabbedPage>
